@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Group Organizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 200px;
+            padding: 10px;
+        }
+        .toggle-button {
+            display: inline-block;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            background-color: #007BFF; /* Bootstrap primary color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+        }
+        .toggle-button.disabled {
+            background-color: #6c757d; /* Bootstrap secondary color */
+            cursor: not-allowed;
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Tab Group Organizer</h3>
+    <button id="toggleExtension" class="toggle-button">Loading...</button>
+    <button id="autoMerge" class="toggle-button" disabled>Loading...</button>
+    <script src="popup.js"></script>
+</body>
+</html>
