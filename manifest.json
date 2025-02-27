@@ -7,6 +7,10 @@
         "tabGroups",
         "storage"
     ],
+    "icons": {
+        "192": "favicon/android-chrome-192x192.png",
+        "512": "favicon/android-chrome-512x512.png"
+    },
     "background": {
         "service_worker": "background.js"
     },
@@ -16,7 +20,8 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["content.js"]
+            "js": ["content.js"],
+            "run_at": "document_idle"
         }
     ]
 }
